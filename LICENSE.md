@@ -1,4 +1,4 @@
-visa-k8s-cloud-provider-poc: A high-throughput, asynchronous data ingestion engine designed for the ICAT data catalogue.
+visa-k8s-cloud-provider-poc: A Kubernetes cloud provider for VISA.
 
 Copyright (C) 2026 ALBA Synchrotron
 
