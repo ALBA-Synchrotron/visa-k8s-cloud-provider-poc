@@ -1,0 +1,12 @@
+[
+  {
+    "model": "cloud_provider.StorageConfig",
+    "pk": 1,
+    "fields": {
+      "instrument": "BL06",
+      "read_only": true,
+      "server": "blahblah.alba.alba",
+      "server_path": "/instruments/bl06/"
+    }
+  }
+]

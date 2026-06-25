@@ -1,0 +1,9 @@
+{
+  "provider_id": "alba-sso",
+  "name": "ALBA SSO",
+  "client_id": "",
+  "secret": "",
+  "settings": {
+    "server_url": ""
+  }
+}

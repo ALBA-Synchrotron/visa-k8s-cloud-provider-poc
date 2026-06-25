@@ -1,0 +1,7 @@
+[client]
+database = visa_alba_cloud_provider
+host =
+port = 3306
+user =
+password =
+default-character-set = utf8

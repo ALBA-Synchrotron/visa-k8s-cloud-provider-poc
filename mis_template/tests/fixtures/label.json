@@ -1,0 +1,22 @@
+[
+  {
+    "model": "mis_template.Label",
+    "pk": 1,
+    "fields": {
+      "code": "LAB_1",
+      "text_en": "Example text",
+      "text_es": "Texto de ejemplo",
+      "text_ca": "Text d'exemple"
+    }
+  },
+  {
+    "model": "mis_template.Label",
+    "pk": 2,
+    "fields": {
+      "code": "LAB_2",
+      "text_en": "Example text",
+      "text_es": "Texto de ejemplo",
+      "text_ca": "Text d'exemple"
+    }
+  }
+]

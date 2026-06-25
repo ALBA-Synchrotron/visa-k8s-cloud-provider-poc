@@ -1,0 +1,32 @@
+[
+  {
+    "model": "cloud_provider.cloudlimit",
+    "pk": 1,
+    "fields": {
+      "name": "MAX_TOTAL_RAM_ALLOWED",
+      "description": "Total amount of RAM allowed to use by the ACP",
+      "value": "47684",
+      "unit": "MiB"
+    }
+  },
+  {
+    "model": "cloud_provider.cloudlimit",
+    "pk": 2,
+    "fields": {
+      "name": "MAX_INSTANCE_AMOUNT",
+      "description": "Total amount of instances allowed to use by the ACP",
+      "value": "15",
+      "unit": "instances"
+    }
+  },
+  {
+    "model": "cloud_provider.cloudlimit",
+    "pk": 3,
+    "fields": {
+      "name": "MAX_TOTAL_CORES_ALLOWED",
+      "description": "Total amount of cores allowed to use by the ACP",
+      "value": "10",
+      "unit": "cores"
+    }
+  }
+]

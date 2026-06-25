@@ -1,0 +1,10 @@
+[
+  {
+    "model": "cloud_provider.HomeDirectory",
+    "pk": 1,
+    "fields": {
+      "path": "/home/user",
+      "proposal_account": 1
+    }
+  }
+]

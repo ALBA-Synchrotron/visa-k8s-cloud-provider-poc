@@ -1,0 +1,9 @@
+[
+  {
+    "model": "object_template.MyObjectName",
+    "pk": 1,
+    "fields": {
+      "name": "Test Name"
+    }
+  }
+]

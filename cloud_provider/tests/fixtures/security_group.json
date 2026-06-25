@@ -1,0 +1,9 @@
+[
+  {
+    "model": "cloud_provider.SecurityGroup",
+    "pk": 1,
+    "fields": {
+      "name": "Test Name"
+    }
+  }
+]

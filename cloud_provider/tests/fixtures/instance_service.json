@@ -1,0 +1,12 @@
+[
+  {
+    "model": "cloud_provider.InstanceService",
+    "pk": 1,
+    "fields": {
+      "name": "Guacamole",
+      "port": 4822,
+      "bind_address": "127.0.0.1",
+      "protocol": "TCP"
+    }
+  }
+]

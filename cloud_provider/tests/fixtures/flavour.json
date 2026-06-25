@@ -1,0 +1,12 @@
+[
+  {
+    "model": "cloud_provider.Flavour",
+    "pk": 1,
+    "fields": {
+      "name": "Test Name",
+      "disk": 100,
+      "ram": 2000,
+      "cpus": 4
+    }
+  }
+]

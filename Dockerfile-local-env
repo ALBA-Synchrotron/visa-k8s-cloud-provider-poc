@@ -1,0 +1,33 @@
+FROM python:3.12.6-slim-bookworm
+# NOTE: ARG instruction only is valid for build instructions (not ENTRYPOINT or CMD)
+ARG SETTINGS_FILE
+ENV PATH="/root/.local/bin/:$PATH"
+ENV PYTHONBUFFERED 1
+WORKDIR /django/app
+
+# Build deps - remove after use
+RUN apt-get update && apt-get install -y \
+    pkg-config \
+    libmariadbclient-dev-compat \
+    curl \
+    make \
+    gcc \
+    musl-dev \
+    libffi-dev \
+    libldap2-dev \
+    libsasl2-dev \
+    libssl-dev \
+    build-essential
+
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+
+COPY requirements.txt /django/app/requirements.txt
+
+RUN uv pip install -r requirements.txt --system
+
+# Clean build deps
+RUN apt-get -y --allow-remove-essential remove make gcc musl-dev libffi-dev libjpeg62-turbo-dev && rm -rf ~/.cache/pip
+
+
+# Logs and DB conf
+RUN mkdir /django/logs && mkdir -p /django/config/database

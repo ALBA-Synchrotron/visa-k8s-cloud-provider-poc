@@ -1,0 +1,11 @@
+[
+  {
+    "model": "cloud_provider.ProposalAccount",
+    "pk": 1,
+    "fields": {
+      "username": "u2029097846",
+      "uid": 7000001,
+      "gid": 8000001
+    }
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "model": "cloud_provider.Instance",
+    "pk": 1,
+    "fields": {
+      "name": "Test Name",
+      "flavour": 1,
+      "image": 1,
+      "active": false,
+      "created_at": "2024-10-29 10:22:09.178577",
+      "updated_at": "2024-10-29 10:22:09.178577",
+      "security_groups": [
+        1
+      ],
+      "deployment_name": "test-deploy-1"
+    }
+  },
+  {
+    "model": "cloud_provider.Instance",
+    "pk": 2,
+    "fields": {
+      "name": "Test Name",
+      "flavour": 1,
+      "image": 1,
+      "active": false,
+      "created_at": "2024-10-29 10:22:09.178577",
+      "updated_at": "2024-10-29 10:22:09.178577",
+      "deleted_at": "2024-10-29 10:22:09.178577",
+      "deployment_name": "test-deploy-2"
+    }
+  }
+]

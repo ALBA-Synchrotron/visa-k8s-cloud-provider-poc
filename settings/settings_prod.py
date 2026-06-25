@@ -1,0 +1,25 @@
+from .settings import *
+
+ALLOWED_HOSTS = ['*']
+
+CSRF_TRUSTED_ORIGINS = ['']
+
+FORCE_SCRIPT_NAME = "/vws/acp/"
+LOGIN_URL = f"/vws/acp{LOGIN_URL}"
+DJANGO_ENV = 'PROD'
+STATIC_URL = "/vws/acp/static/"
+LOGIN_REDIRECT_URL = 'https://<<USE_YOUR_OWN>>/vws/acp/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+VISA_USER_POD_NAMESPACE = 'visa-pods-prod'
+VISA_DEFAULT_IMAGE_PULL_POLICY = 'IfNotPresent'
+VISA_DEFAULT_DNS_POLICY = "ClusterFirst"
+VISA_DEFAULT_DEPLOYMENT_PREFIX = f"visa-{DJANGO_ENV.lower()}-user-pod"
+VISA_IMAGE_PULL_SECRET_NAME = None
+VISA_IMAGE_PULL_SECRET_NAMESPACE = None
+
+# PUBLIC KEY SETTINGS
+VISA_PUBLIC_KEY_NAME = 'prod-pam-key'
+VISA_PUBLIC_KEY_FILENAME = 'public.key'
+VISA_PUBLIC_KEY_MOUNT_PATH = '/etc/visa/'
